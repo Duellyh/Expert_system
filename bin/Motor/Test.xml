@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note>
+	<goal>
+		<attribute>Testegoal		</attribute>
+		<text>	textogoal</text>
+	</goal>
+	<rules>
+		<rule>
+			<name>1</name>
+			<conditions>
+				<condition>			
+					<attribute>casa</attribute>	
+			    	<value>4</value>
+		    	</condition>
+			</conditions>
+			<actions>
+				<action>
+					<attribute>casafazer</attribute>	
+					<value>4</value>
+				</action>
+			</actions> 
+		</rule>
+	</rules>
+	
+	<questions>
+	
+		<question>
+			<attribute>5</attribute>
+			<text>6</text>
+			<response>7</response>
+		</question>
+	
+	</questions> 
+</note>
