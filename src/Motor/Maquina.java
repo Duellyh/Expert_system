@@ -11,6 +11,7 @@ public class Maquina {
 	
 	
 	public static void main(String[] args) throws IOException {
+		
 		  Maquina m = new Maquina();
 		    Class cls = m.getClass();
 		    
@@ -19,15 +20,28 @@ public class Maquina {
 	
 	
 	InferenceEngine engine = new InferenceEngine(new File(testFile.getPath()));
+	//new InterG3();
+	engine.run();
+	System.out.println(engine.log());
+	System.out.println("1aaaaaaa");
+	
+	engine.setChosenAnswer("tanker");
+	System.out.println("Difiniu resposta da primeira pergunta");
 	
 	engine.run();
-	engine.setChosenAnswer("yes");
+	System.out.println(engine.log());
+	System.out.println("3aaaaaaa");
+	//System.out.println(engine.log());
+	//System.out.println("aaaaaaa");
+	
+	engine.setChosenAnswer("top");
 	engine.run();
-	engine.setChosenAnswer("no");
-	engine.run();
-	engine.setChosenAnswer("blue");
-	engine.run(); 
-	 }
+	System.out.println(engine.log()); 
+	//engine.setChosenAnswer("blue");
+	//engine.run();
+	//System.out.println(engine.log());
+	}
+	
 
 
 }

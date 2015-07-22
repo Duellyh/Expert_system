@@ -1,34 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<note>
+<knowledgebase>
 	<goal>
-		<attribute>Testegoal		</attribute>
-		<text>	textogoal</text>
+		<attribute>objetivo</attribute>
+		<text>Personagem que deverá escolher:</text>
+		
 	</goal>
 	<rules>
 		<rule>
 			<name>1</name>
 			<conditions>
 				<condition>			
-					<attribute>casa</attribute>	
-			    	<value>4</value>
+					<attribute>personagem</attribute>	
+			    	<value>arqueiro</value>
+		    	</condition>
+		    	<condition>			
+					<attribute>caminho</attribute>	
+			    	<value>mid</value>
 		    	</condition>
 			</conditions>
 			<actions>
 				<action>
-					<attribute>casafazer</attribute>	
-					<value>4</value>
+					<attribute>objetivo</attribute>	
+					<value>ARA</value>
+				</action>
+			</actions> 
+		</rule>
+			<rule>
+			<name>2</name>
+			<conditions>
+				<condition>			
+					<attribute>personagem</attribute>	
+			    	<value>arqueiro</value>
+		    	</condition>
+		    	<condition>			
+					<attribute>caminho</attribute>	
+			    	<value>top</value>
+		    	</condition>
+			</conditions>
+			<actions>
+				<action>
+					<attribute>objetivo</attribute>	
+					<value>ARB</value>
+				</action>
+			</actions> 
+		</rule>
+		
+		<rule>
+			<name>3</name>
+			<conditions>
+				<condition>			
+					<attribute>personagem</attribute>	
+			    	<value>atirador</value>
+		    	</condition>
+		    	<condition>			
+					<attribute>caminho</attribute>	
+			    	<value>top</value>
+		    	</condition>
+			</conditions>
+			<actions>
+				<action>
+					<attribute>objetivo</attribute>	
+					<value>TIB</value>
+				</action>
+			</actions> 
+		</rule>
+		
+		
+		<rule>
+			<name>4</name>
+			<conditions>
+				<condition>			
+					<attribute>personagem</attribute>	
+			    	<value>atirador</value>
+		    	</condition>
+		    	<condition>			
+					<attribute>caminho</attribute>	
+			    	<value>mid</value>
+		    	</condition>
+			</conditions>
+			<actions>
+				<action>
+					<attribute>objetivo</attribute>	
+					<value>TIA</value>
+				</action>
+			</actions> 
+		</rule>
+		
+		
+		<rule>
+			<name>5</name>
+			<conditions>
+				<condition>			
+					<attribute>personagem</attribute>	
+			    	<value>tanker</value>
+		    	</condition>
+		    	<condition>			
+					<attribute>caminho</attribute>	
+			    	<value>top</value>
+		    	</condition>
+			</conditions>
+			<actions>
+				<action>
+					<attribute>objetivo</attribute>	
+					<value>TANB</value>
+				</action>
+			</actions> 
+		</rule>
+		
+			<rule>
+			<name>6</name>
+			<conditions>
+				<condition>			
+					<attribute>personagem</attribute>	
+			    	<value>tanker</value>
+		    	</condition>
+		    	<condition>			
+					<attribute>caminho</attribute>	
+			    	<value>mid</value>
+		    	</condition>
+			</conditions>
+			<actions>
+				<action>
+					<attribute>objetivo</attribute>	
+					<value>TANA</value>
 				</action>
 			</actions> 
 		</rule>
 	</rules>
 	
+	
 	<questions>
 	
 		<question>
-			<attribute>5</attribute>
-			<text>6</text>
-			<response>7</response>
+			<attribute>personagem</attribute>
+			<text>Qual personagem escolher?</text>
+			<response>arqueiro</response>
+			<response>atirador</response>
+			<response>tanker</response>
 		</question>
+		
+			<question>
+			<attribute>caminho</attribute>
+			<text>Qual Caminho vai seguir?</text>
+			<response>mid</response>
+			<response>top</response>
+		</question>
+
 	
 	</questions> 
-</note>
+</knowledgebase>

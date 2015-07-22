@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
-class Rule { 
+ class Rule { 
     private String name = null; 
     private Hashtable conditions = null; 
     private Hashtable actions = null; 
@@ -91,18 +91,21 @@ public class InferenceEngine {
     private String chosenAnswer = null; 
     private int status; 
     private String logtext = null; 
+    private String personagem = null;
 
     public InferenceEngine(File file) throws IOException { 
 
         SAXBuilder builder = new SAXBuilder(); 
         Element inputRootElement = null; 
+        //Lendo o documento
         try { 
             Document inputDocument = builder.build(file); 
             inputRootElement = inputDocument.getRootElement(); 
         } catch (JDOMException e) { 
             e.printStackTrace(); 
         } 
-
+       // aqui ele acha a variavel objetivo
+       // acha o attributo e o texto 
         Iterator children = inputRootElement.getChildren().iterator(); 
         while (children.hasNext()) { 
             Element child = (Element) children.next(); 
@@ -126,7 +129,9 @@ public class InferenceEngine {
             Rule rule = (Rule) ruleSet.next(); 
             Enumeration keys = null; 
             Hashtable conditions = rule.getConditions(); 
-            keys = conditions.keys(); 
+           
+            keys = conditions.keys();
+           
             while (keys.hasMoreElements()) { 
                 knowledge.put(keys.nextElement(), ""); 
             } 
@@ -140,6 +145,7 @@ public class InferenceEngine {
 
             while (keys.hasMoreElements()) { 
                 System.out.println((String)keys.nextElement()); 
+               
 
             } 
         logging("Reading knowledge base from " + file.getAbsolutePath()); 
@@ -151,7 +157,24 @@ public class InferenceEngine {
         System.out.println(log()); 
     } 
 
-    public String log() { 
+    
+    
+    
+    public String getPersonagem() {
+		return personagem;
+	}
+
+
+
+
+	public void setPersonagem(String personagem) {
+		this.personagem = personagem;
+	}
+
+
+
+
+	public String log() { 
         String text = new String(logtext); 
         logtext = ""; 
         return text; 
@@ -159,20 +182,24 @@ public class InferenceEngine {
 
     public int run() { 
         boolean didsomething = false; 
-
+    	//System.out.println("answered: "+ answeredRuleAttribute);  
+    	//System.out.println(chosenAnswer);  
         if (answeredRuleAttribute != null) { 
+        
             makeknown(answeredRuleAttribute, chosenAnswer); 
             didsomething = true; 
         } 
 
-        if (goalset()) { 
+      /*  if (goalset()) { 
             status = COMPLETE; 
+            System.out.println(log()); 
             return status; 
-        } 
+        } */
 
         Iterator ruleSet = rules.iterator(); 
         while (ruleSet.hasNext()) { 
             Rule rule = (Rule) ruleSet.next(); 
+            
             if (rule.isActive()) { 
                 logging("\nExamining rule " + rule.getName()); 
                 boolean ok = true; 
@@ -185,6 +212,7 @@ public class InferenceEngine {
                         if (!questions.containsKey(key)) { 
                             logging("Rule cannot be resolved at present"); 
                             ok = false; 
+                           // System.out.println(log()); 
                             break; 
                         } 
                     } 
@@ -201,23 +229,27 @@ public class InferenceEngine {
                                 messageForQuerent = question.getText(); 
                                 possibleResponses = (ArrayList) question.getResponses(); 
                                 status = MORE; 
+                                
                                 return status; 
                             } 
                         } 
                     } 
                 } 
                 if (ok) { 
-                    logging("Rule passed"); 
+                    logging("Rule " + rule.getName() + " passed"); 
                     Hashtable actions = rule.getActions(); 
                     Enumeration actionSet = actions.keys(); 
                     while (actionSet.hasMoreElements()) { 
                         String actionKey = (String) actionSet.nextElement(); 
+                        setPersonagem((String) actions.get(actionKey));
                         makeknown(actionKey, (String) actions.get(actionKey)); 
+                        
                     } 
                     rule.setInactive(); 
                     didsomething = true; 
                     if (goalset()) { 
                         status = COMPLETE; 
+                        
                         return status; 
                     } 
                 } 
@@ -225,7 +257,9 @@ public class InferenceEngine {
         } 
 
         if (goalset()) { 
+        
             status = COMPLETE; 
+           
         } else if (didsomething == false) { 
             messageForQuerent = "Failed"; 
             status = FAILED; 
@@ -238,12 +272,14 @@ public class InferenceEngine {
     } 
 
     private boolean goalset() { 
+    	// System.out.println("testandoo_1: " + knowledge.get(goalVariable));
         if ((knowledge.get(goalVariable) != null)) { 
+        	// System.out.println("The goal " + goalVariable + " has been set");
             logging("\nThe goal " + goalVariable + " has been set"); 
             logging(theansweris()); 
 
             messageForQuerent = theansweris(); 
-
+            
             return true; 
         } else { 
             return false; 
@@ -251,9 +287,9 @@ public class InferenceEngine {
     } 
 
 
-    void makeknown(String attribute, String value) { 
+    public void makeknown(String attribute, String value) { 
         logging("Setting " + attribute + " to " + value); 
-
+       // System.out.println("Setting " + attribute + " to " + value); 
         knowledge.put(attribute, value); 
 
         Iterator ruleSet = rules.iterator(); 
@@ -268,6 +304,7 @@ public class InferenceEngine {
                 } 
             } 
         } 
+        
     } 
 
     public String getMessageForQuerent() { 
@@ -287,10 +324,13 @@ public class InferenceEngine {
     } 
 
     String theansweris() { 
+    	// aqui ele constroe o texto para goal e define a variavel goal
         StringTokenizer tokenizer = new StringTokenizer(goalDescription); 
+       
         String response = ""; 
         while (tokenizer.hasMoreTokens()) { 
             String token = tokenizer.nextToken(); 
+      
             if (token.equals(goalVariable)) { 
                 response = response + knowledge.get(token); 
             } else { 
@@ -298,6 +338,8 @@ public class InferenceEngine {
             } 
             response = response + " "; 
         } 
+        response = response + getPersonagem();
+    
         return response; 
     } 
 
@@ -326,15 +368,18 @@ public class InferenceEngine {
             if (child.getName().equals("rule")) { 
                 name = child.getChild("name").getText(); 
                 
-                System.out.println("Rule_name: " + name);
+               // System.out.println("Rule_name: " + name);
                 
                 Iterator conditions = child.getChildren("conditions").iterator(); 
                 while (conditions.hasNext()) { 
+                	
                     conds = readrulescora((Element) conditions.next(), "condition"); 
+                  //  System.out.println("rule_conds: " + conds);
                 } 
                 Iterator actions = child.getChildren("actions").iterator(); 
                 while (actions.hasNext()) { 
                     acts = readrulescora((Element) actions.next(), "action"); 
+                  //  System.out.println("rule_acts: " + acts);
                 } 
             } 
             rules.add(new Rule(name, conds, acts)); 
@@ -354,6 +399,7 @@ public class InferenceEngine {
             while (resps.hasNext()) { 
                 Element response = (Element) resps.next(); 
                 responses.add(response.getText()); 
+                System.out.println("questions_responses: " + responses);
             } 
             questions.put(name, new Question(value, responses)); 
         } 
