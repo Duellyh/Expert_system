@@ -7,7 +7,7 @@ import java.net.URL;
 
 public class Maquina {
 	 
- //http://www.theserverside.com/discussions/thread.tss?thread_id=21562
+
 	
 	
 	public static void main(String[] args) throws IOException {

@@ -117,10 +117,7 @@ public class InferenceEngine {
             } else if (child.getName().equals("questions")) { 
                 questions = readquestions(child); 
             }
-            System.out.println("Goal_Attribute: " + goalVariable);
-            System.out.println("Goal_text: " + goalDescription);
-            System.out.println("Rules: " + rules);
-            System.out.println("Questions: " + questions);
+    
             
         } 
 
@@ -143,16 +140,16 @@ public class InferenceEngine {
         } 
             Enumeration keys = knowledge.keys(); 
 
-            while (keys.hasMoreElements()) { 
-                System.out.println((String)keys.nextElement()); 
+           /* while (keys.hasMoreElements()) { 
+                System.out.println("a" +(String)keys.nextElement()); 
                
 
-            } 
-        logging("Reading knowledge base from " + file.getAbsolutePath()); 
+            } */
+        logging("Lendo a base de conhecimento do arquivo: " + file.getAbsolutePath()); 
         logging(""); 
-        logging("There are " + rules.size() + " rules"); 
-        logging("There are " + questions.size() + " questions"); 
-        logging("There are " + knowledge.size() + " attributes"); 
+        logging("Existem " + rules.size() + " regras"); 
+        logging("Existem " + questions.size() + " perguntas"); 
+        logging("Existem " + knowledge.size() + " atributos"); 
         logging(""); 
         System.out.println(log()); 
     } 
@@ -201,7 +198,7 @@ public class InferenceEngine {
             Rule rule = (Rule) ruleSet.next(); 
             
             if (rule.isActive()) { 
-                logging("\nExamining rule " + rule.getName()); 
+                logging("\nExaminando a regra " + rule.getName()); 
                 boolean ok = true; 
                 Hashtable conditions = rule.getConditions(); 
                 Enumeration keys; 
@@ -210,7 +207,7 @@ public class InferenceEngine {
                     String key = (String) keys.nextElement(); 
                     if ((knowledge.get(key)).equals("")) { 
                         if (!questions.containsKey(key)) { 
-                            logging("Rule cannot be resolved at present"); 
+                            logging("A Regra não pode ser resolvida no momento."); 
                             ok = false; 
                            // System.out.println(log()); 
                             break; 
@@ -224,7 +221,7 @@ public class InferenceEngine {
                         if ((knowledge.get(key)).equals("")) { 
                             if (questions.containsKey(key)) { 
                                 Question question = (Question) questions.get(key); 
-                                logging("Question is " + question.getText()); 
+                                logging("A Pergunta é " + question.getText()); 
                                 answeredRuleAttribute = key; 
                                 messageForQuerent = question.getText(); 
                                 possibleResponses = (ArrayList) question.getResponses(); 
@@ -236,7 +233,7 @@ public class InferenceEngine {
                     } 
                 } 
                 if (ok) { 
-                    logging("Rule " + rule.getName() + " passed"); 
+                    logging("A Regra " + rule.getName() + " foi satisfeita"); 
                     Hashtable actions = rule.getActions(); 
                     Enumeration actionSet = actions.keys(); 
                     while (actionSet.hasMoreElements()) { 
@@ -272,10 +269,10 @@ public class InferenceEngine {
     } 
 
     private boolean goalset() { 
-    	// System.out.println("testandoo_1: " + knowledge.get(goalVariable));
+    
         if ((knowledge.get(goalVariable) != null)) { 
-        	// System.out.println("The goal " + goalVariable + " has been set");
-            logging("\nThe goal " + goalVariable + " has been set"); 
+        	
+            logging("\nA Váriavel-objetivo " + goalVariable + " foi definida"); 
             logging(theansweris()); 
 
             messageForQuerent = theansweris(); 
@@ -288,8 +285,8 @@ public class InferenceEngine {
 
 
     public void makeknown(String attribute, String value) { 
-        logging("Setting " + attribute + " to " + value); 
-       // System.out.println("Setting " + attribute + " to " + value); 
+        logging("Definindo " + attribute + " igual " + value); 
+   
         knowledge.put(attribute, value); 
 
         Iterator ruleSet = rules.iterator(); 
@@ -298,7 +295,7 @@ public class InferenceEngine {
             if (rule.isActive()) { 
                 if (rule.getConditions().containsKey(attribute)) { 
                     if (!rule.getConditions().get(attribute).equals(value)) { 
-                        logging("Rule " + rule.getName() + " is now inactive"); 
+                        logging("A regra " + rule.getName() + " está inativa, pois a condição não foi satisfeita"); 
                         rule.setInactive(); 
                     } 
                 } 
@@ -324,7 +321,7 @@ public class InferenceEngine {
     } 
 
     String theansweris() { 
-    	// aqui ele constroe o texto para goal e define a variavel goal
+ 
         StringTokenizer tokenizer = new StringTokenizer(goalDescription); 
        
         String response = ""; 
@@ -368,18 +365,18 @@ public class InferenceEngine {
             if (child.getName().equals("rule")) { 
                 name = child.getChild("name").getText(); 
                 
-               // System.out.println("Rule_name: " + name);
+            
                 
                 Iterator conditions = child.getChildren("conditions").iterator(); 
                 while (conditions.hasNext()) { 
                 	
                     conds = readrulescora((Element) conditions.next(), "condition"); 
-                  //  System.out.println("rule_conds: " + conds);
+               
                 } 
                 Iterator actions = child.getChildren("actions").iterator(); 
                 while (actions.hasNext()) { 
                     acts = readrulescora((Element) actions.next(), "action"); 
-                  //  System.out.println("rule_acts: " + acts);
+                 
                 } 
             } 
             rules.add(new Rule(name, conds, acts)); 
@@ -399,7 +396,7 @@ public class InferenceEngine {
             while (resps.hasNext()) { 
                 Element response = (Element) resps.next(); 
                 responses.add(response.getText()); 
-                System.out.println("questions_responses: " + responses);
+               
             } 
             questions.put(name, new Question(value, responses)); 
         } 
