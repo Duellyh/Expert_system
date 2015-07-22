@@ -157,7 +157,14 @@ public class InferenceEngine {
     
     
     
-    public String getPersonagem() {
+    public InferenceEngine() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+	public String getPersonagem() {
 		return personagem;
 	}
 

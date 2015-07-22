@@ -31,7 +31,7 @@ public class InterG3 extends JFrame implements ActionListener
     private JPanel pbotoes, pdados;
     
     private Container tela;
-    Maquina m = new Maquina();
+    InferenceEngine m = new InferenceEngine();
     Class cls = m.getClass();
     
     URL testFile = (cls.getResource("Test.xml"));
