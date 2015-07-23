@@ -1,1142 +1,1171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<knowledgebase>
-	<goal>
-		<attribute>item</attribute>
+<base>
+	<var_objetivo>
+		<atributo>item</atributo>
 		<text>Item que deverá escolher:</text>
 		
-	</goal>
-	<rules>
-		<rule>
+	</var_objetivo>
+	<regras>
+		<regra>
 			<name>1</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Jungle</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Jungle</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Desconhecido</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Desconhecido</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Hunter's Machete</value>
+					<atributo>item</atributo>	
+					<valor>Hunter's Machete</valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-				<rule>
+				<regra>
 			<name>2</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Mid</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Mid</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade</value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade</valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-				<rule>
+				<regra>
 			<name>3</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Mid</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Mid</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade e Doran's Shield</value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade e Doran's Shield</valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-				<rule>
+				<regra>
 			<name>4</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade e Doran's Shield</value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade e Doran's Shield</valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-				<rule>
+				<regra>
 			<name>5</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade</value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade</valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-			<rule>
+			<regra>
 			<name>6</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Tank</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Tank</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade</value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade</valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-		<rule>
+		<regra>
 			<name>7</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Shield</value>
+					<atributo>item</atributo>	
+					<valor>Doran's Shield</valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-			<rule>
+			<regra>
 			<name>8</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Tank</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Tank</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Tank</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Tank</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Ring Ou Doran's Shield</value>
+					<atributo>item</atributo>	
+					<valor>Doran's Ring Ou Doran's Shield</valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-			<rule>
+			<regra>
 			<name>9</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Tank</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Tank</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Ring Ou Doran's Shield</value>
+					<atributo>item</atributo>	
+					<valor>Doran's Ring Ou Doran's Shield</valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-				<rule>
+				<regra>
 			<name>10</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Tank</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Tank</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Ring Ou Doran's Shield</value>
+					<atributo>item</atributo>	
+					<valor>Doran's Ring Ou Doran's Shield</valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-					<rule>
+					<regra>
 			<name>11</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Tank</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Tank</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Ring </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Ring </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-				<rule>
+				<regra>
 			<name>12</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Tank</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Jungle</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Tank</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Jungle</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Desconhecido</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Desconhecido</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Hunter's Machete </value>
+					<atributo>item</atributo>	
+					<valor>Hunter's Machete </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-					<rule>
+					<regra>
 			<name>13</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Tank</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Jungle</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Tank</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Jungle</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Desconhecido</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Desconhecido</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Hunter's Machete </value>
+					<atributo>item</atributo>	
+					<valor>Hunter's Machete </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-				<rule>
+				<regra>
 			<name>14</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Desconhecido</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Desconhecido</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-				<rule>
+				<regra>
 			<name>15</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-			<rule>
+			<regra>
 			<name>16</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-			<rule>
+			<regra>
 			<name>17</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-		<rule>
+		<regra>
 			<name>18</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Tank</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Tank</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 			
-			<rule>
+			<regra>
 			<name>19</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Mid</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Mid</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-			<rule>
+			<regra>
 			<name>20</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Mid</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Mid</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-			<rule>
+			<regra>
 			<name>21</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Bot</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Bot</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-				<rule>
+				<regra>
 			<name>22</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Bot</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Bot</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-			<rule>
+			<regra>
 			<name>23</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Bot</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Bot</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Suporte</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Suporte</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Blade </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Blade </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-			<rule>
+			<regra>
 			<name>24</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Mid</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Mid</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Desconhecido</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Desconhecido</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Ring </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Ring </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-			<rule>
+			<regra>
 			<name>25</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Mid</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Mid</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Ring </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Ring </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-		<rule>
+		<regra>
 			<name>26</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Mid</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Mid</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Ring </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Ring </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-			<rule>
+			<regra>
 			<name>27</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Jungle</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Jungle</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Desconhecido</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Desconhecido</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Hunter's Machete </value>
+					<atributo>item</atributo>	
+					<valor>Hunter's Machete </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-				<rule>
+				<regra>
 			<name>28</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Desconhecido</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Desconhecido</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Ring </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Ring </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-					<rule>
+					<regra>
 			<name>29</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Ring </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Ring </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
 			
-					<rule>
+					<regra>
 			<name>30</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Ring </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Ring </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 			
-							<rule>
+							<regra>
 			<name>31</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Top</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Top</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Tank</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Tank</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Doran's Ring </value>
+					<atributo>item</atributo>	
+					<valor>Doran's Ring </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-						<rule>
+						<regra>
 			<name>32</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Suporte</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Bot</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Suporte</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Bot</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Desconhecido</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Desconhecido</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Ancient Coin OU Spellthief's Edge OU Targon's Brace </value>
+					<atributo>item</atributo>	
+					<valor>Ancient Coin OU Spellthief's Edge OU Targon's Brace </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-						<rule>
+						<regra>
 			<name>33</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Suporte</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Bot</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Suporte</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Bot</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Atirador</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Ancient Coin OU Spellthief's Edge OU Targon's Brace </value>
+					<atributo>item</atributo>	
+					<valor>Ancient Coin OU Spellthief's Edge OU Targon's Brace </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-					<rule>
+					<regra>
 			<name>34</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Suporte</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Bot</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Suporte</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Bot</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Mago</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Mago</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Ancient Coin OU Spellthief's Edge OU Targon's Brace </value>
+					<atributo>item</atributo>	
+					<valor>Ancient Coin OU Spellthief's Edge OU Targon's Brace </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-					<rule>
+					<regra>
 			<name>35</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Suporte</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Bot</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Suporte</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Bot</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Tank</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Tank</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Ancient Coin OU Spellthief's Edge OU Targon's Brace </value>
+					<atributo>item</atributo>	
+					<valor>Ancient Coin OU Spellthief's Edge OU Targon's Brace </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
 		
-				<rule>
+				<regra>
 			<name>36</name>
-			<conditions>
-				<condition>			
-					<attribute>Classe_principal</attribute>	
-			    	<value>Suporte</value>
-		    	</condition>
-		    	<condition>			
-					<attribute>Rota</attribute>	
-			    	<value>Bot</value>
-		    	</condition>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Suporte</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Bot</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_secundaria</attribute>	
-			    	<value>Nenhuma</value>
-		    	</condition>
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
 				
-				<condition>			
-					<attribute>Classe_inimiga</attribute>	
-			    	<value>Assasino</value>
-		    	</condition>
-			</conditions>
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+			</condicoes>
 			<actions>
 				<action>
-					<attribute>item</attribute>	
-					<value>Ancient Coin OU Spellthief's Edge OU Targon's Brace </value>
+					<atributo>item</atributo>	
+					<valor>Ancient Coin OU Spellthief's Edge OU Targon's Brace </valor>
 				</action>
 			</actions> 
-		</rule>
+		</regra>
+			
+			<regra>
+			<name>37</name>
+			<condicoes>
+				<condicao>			
+					<atributo>Classe_principal</atributo>	
+			    	<valor>Atirador</valor>
+		    	</condicao>
+		    	<condicao>			
+					<atributo>Rota</atributo>	
+			    	<valor>Bot</valor>
+		    	</condicao>
+				
+				<condicao>			
+					<atributo>Classe_secundaria</atributo>	
+			    	<valor>Nenhuma</valor>
+		    	</condicao>
+				
+				<condicao>			
+					<atributo>Classe_inimiga</atributo>	
+			    	<valor>Assasino</valor>
+		    	</condicao>
+			</condicoes>
+			<actions>
+				<action>
+					<atributo>item</atributo>	
+					<valor>Ancient Coin OU Spellthief's Edge OU Targon's Brace </valor>
+				</action>
+			</actions> 
+		</regra>
 			
 			
-			
-			
-	</rules>
+	</regras>
 	
 	
-	<questions>
+	<perguntas>
 	
-		<question>
-			<attribute>Classe_principal</attribute>
-			<text>Qual é a sua classe principal?</text>
-			<response>Atirador</response>
-			<response>Assasino</response>
-			<response>Suporte</response>
-			<response>Mago</response>
-			<response>Tank</response>
-		</question>
-		
-			<question>
-			<attribute>Rota</attribute>
+	
+		<pergunta>
+			<atributo>Rota</atributo>
 			<text>Qual rota vai seguir?</text>
-			<response>Top</response>
-			<response>Jungle</response>
-			<response>Mid</response>
-			<response>Bot</response>
-		</question>
+			<resposta>Top</resposta>
+			<resposta>Jungle</resposta>
+			<resposta>Mid</resposta>
+			<resposta>Bot</resposta>
+		</pergunta>
 		
-			<question>
-			<attribute>Classe_secundaria</attribute>
+			<pergunta>
+			<atributo>Classe_secundaria</atributo>
 			<text>Qual é a sua classe secundária?</text>
-			<response>Atirador</response>
-			<response>Assasino</response>
-			<response>Suporte</response>
-			<response>Mago</response>
-			<response>Tank</response>
-			<response>Nenhuma</response>
-		</question>
+			<resposta>Atirador</resposta>
+			<resposta>Assasino</resposta>
+			<resposta>Suporte</resposta>
+			<resposta>Mago</resposta>
+			<resposta>Tank</resposta>
+			<resposta>Nenhuma</resposta>
+		</pergunta>
 		
-		<question>
-			<attribute>Classe_inimiga</attribute>
+			<pergunta>
+			<atributo>Classe_principal</atributo>
+			<text>Qual é a sua classe principal?</text>
+			<resposta>Atirador</resposta>
+			<resposta>Assasino</resposta>
+			<resposta>Suporte</resposta>
+			<resposta>Mago</resposta>
+			<resposta>Tank</resposta>
+		</pergunta>
+		
+		<pergunta>
+			<atributo>Classe_inimiga</atributo>
 			<text>Qual é a classe inimiga?</text>
-			<response>Atirador</response>
-			<response>Assasino</response>
-			<response>Suporte</response>
-			<response>Mago</response>
-			<response>Tank</response>
-			<response>Desconhecida</response>
+			<resposta>Atirador</resposta>
+			<resposta>Assasino</resposta>
+			<resposta>Suporte</resposta>
+			<resposta>Mago</resposta>
+			<resposta>Tank</resposta>
+			<resposta>Desconhecida</resposta>
 			
-		</question>
+		</pergunta>
 
 	
-	</questions> 
-</knowledgebase>
+	</perguntas> 
+</base>

@@ -31,12 +31,12 @@ public class InterG3 extends JFrame implements ActionListener
     private JPanel pbotoes, pdados;
     
     private Container tela;
-    InferenceEngine m = new InferenceEngine();
+    MotorInferencia m = new MotorInferencia();
     Class cls = m.getClass();
     
     URL testFile = (cls.getResource("Test.xml"));
 	//System.out.println("Value = " + testFile);  
-    InferenceEngine engine = new InferenceEngine(new File(testFile.getPath()));
+    MotorInferencia motorInferencia = new MotorInferencia(new File(testFile.getPath()));
     
     InterG3() throws IOException
     {
@@ -101,7 +101,7 @@ public class InterG3 extends JFrame implements ActionListener
        {
     	  // System.out.println(cbOp.getSelectedItem());  
     	   String resposta = (String) cbOp.getSelectedItem();
-    	   engine.setChosenAnswer(resposta);
+    	   motorInferencia.setChosenAnswer(resposta);
     	  try {
 			Iniciar();
 		} catch (IOException e) {
@@ -118,12 +118,12 @@ public class InterG3 extends JFrame implements ActionListener
     	
 	
 	
-	engine.run();
-	System.out.println(engine.log());
-	lbnro1.setText(engine.getMessageForQuerent());
+    	motorInferencia.run();
+	System.out.println(motorInferencia.log());
+	lbnro1.setText(motorInferencia.getMessagemPergunta());
 	cbOp.removeAllItems();
-	for (int i = 0; i < engine.getPossibleResponses().size(); i++){
-        cbOp.addItem(engine.getPossibleResponses().get(i));
+	for (int i = 0; i < motorInferencia.getTotalRespostas().size(); i++){
+        cbOp.addItem(motorInferencia.getTotalRespostas().get(i));
 	 }
 	
     }
