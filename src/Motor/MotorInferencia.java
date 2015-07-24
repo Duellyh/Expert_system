@@ -31,7 +31,7 @@ public class MotorInferencia {
     private String answeredregraatributo = null; 
     private String messagemPergunta = null; 
     private ArrayList totalRespostas = null; 
-    private String chosenAnswer = null; 
+    private String RespostaEscolhida = null; 
     private int status; 
     private String logtext = null; 
     private String personagem = null;
@@ -66,7 +66,7 @@ public class MotorInferencia {
             } else if (child.getName().equals("perguntas")) { 
                 perguntas = readperguntas(child); 
             }
-         //   System.out.println("Questaos: " + perguntas);
+    
             
         } 
 
@@ -199,7 +199,7 @@ public class MotorInferencia {
 
         if (answeredregraatributo != null) { 
         
-            makeknown(answeredregraatributo, chosenAnswer); 
+            makeknown(answeredregraatributo, RespostaEscolhida); 
             didsomething = true; 
         } 
 
@@ -313,7 +313,7 @@ public class MotorInferencia {
             if (regra.isAtivo()) { 
                 if (regra.getCondicoes().containsKey(atributo)) { 
                     if (!regra.getCondicoes().get(atributo).equals(valor)) { 
-                        logging("A regra " + regra.getName() + " foi desativada, pois a condição não foi satisfeita"); 
+                        logging("A regra " + regra.getName() + " foi desativada, pois a condição não foi satisfeita\n O atributo:" + regra.getCondicoes().get(atributo) ); 
                         regra.setInAtivo(); 
                     } 
                 } 
@@ -356,8 +356,8 @@ public class MotorInferencia {
         return totalRespostas; 
     } 
 
-    public void setChosenAnswer(String chosenAnswer) { 
-        this.chosenAnswer = chosenAnswer; 
+    public void setRespostaEscolhida(String RespostaEscolhida) { 
+        this.RespostaEscolhida = RespostaEscolhida; 
     } 
 
 	public String getPersonagem() {

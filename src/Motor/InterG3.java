@@ -101,7 +101,7 @@ public class InterG3 extends JFrame implements ActionListener
        {
     	  // System.out.println(cbOp.getSelectedItem());  
     	   String resposta = (String) cbOp.getSelectedItem();
-    	   motorInferencia.setChosenAnswer(resposta);
+    	   motorInferencia.setRespostaEscolhida(resposta);
     	  try {
 			Iniciar();
 		} catch (IOException e) {
@@ -127,6 +127,7 @@ public class InterG3 extends JFrame implements ActionListener
 	 }
     }else
     {
+    	System.out.println(motorInferencia.log());
     	lbnro1.setText(motorInferencia.getMessagemPergunta());
     	btcalc.setVisible(false);
     	cbOp.setVisible(false);
