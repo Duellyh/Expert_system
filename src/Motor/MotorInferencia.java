@@ -13,66 +13,9 @@ import org.jdom2.JDOMException;
 import java.util.*;
 import java.io.File; 
 import java.io.IOException;
-import java.net.URL;
 
- class Rule { 
-    private String name = null; 
-    private Hashtable condicoes = null; 
-    private Hashtable actions = null; 
-    private boolean active = true; 
 
-    Rule(String name, Hashtable condicoes, Hashtable actions) { 
-        this.name = name; 
-        this.condicoes = condicoes; 
-        this.actions = actions; 
-    } 
 
-    void setInactive() { 
-        active = false; 
-    } 
-
-    public String getName() { 
-        return name; 
-    } 
-
-    public Hashtable getCondicoes() { 
-        return condicoes; 
-    } 
-
-    public Hashtable getActions() { 
-        return actions; 
-    } 
-
-    public boolean isActive() { 
-        return active; 
-    } 
-} 
-
-class Question { 
-    private String text = null; 
-    private Object respostas = null; 
-
-    Question(String text, Object respostas) { 
-        this.text = text; 
-        this.respostas = respostas; 
-    } 
-
-    public String getText() { 
-        return text; 
-    } 
-
-    public void setText(String text) { 
-        this.text = text; 
-    } 
-
-    public Object getrespostas() { 
-        return respostas; 
-    } 
-
-    public void setrespostas(Object respostas) { 
-        this.respostas = respostas; 
-    } 
-} 
 
 public class MotorInferencia { 
     static public int ERROR = 0; 
@@ -123,13 +66,13 @@ public class MotorInferencia {
             } else if (child.getName().equals("perguntas")) { 
                 perguntas = readperguntas(child); 
             }
-            System.out.println("Questaos: " + perguntas);
+         //   System.out.println("Questaos: " + perguntas);
             
         } 
 
         Iterator regraSet = regras.iterator(); 
         while (regraSet.hasNext()) { 
-            Rule regra = (Rule) regraSet.next(); 
+            Regra regra = (Regra) regraSet.next(); 
             Enumeration keys = null; 
             Hashtable condicoes = regra.getCondicoes(); 
            
@@ -138,8 +81,8 @@ public class MotorInferencia {
             while (keys.hasMoreElements()) { 
                 base.put(keys.nextElement(), ""); 
             } 
-            Hashtable actions = regra.getCondicoes(); 
-            keys = actions.keys(); 
+            Hashtable acoes = regra.getCondicoes(); 
+            keys = acoes.keys(); 
             while (keys.hasMoreElements()) { 
                 base.put(keys.nextElement(), ""); 
             } 
@@ -189,13 +132,13 @@ public class MotorInferencia {
                     conds = readregrascora((Element) condicoes.next(), "condicao"); 
                
                 } 
-                Iterator actions = child.getChildren("actions").iterator(); 
-                while (actions.hasNext()) { 
-                    acts = readregrascora((Element) actions.next(), "action"); 
+                Iterator acoes = child.getChildren("acoes").iterator(); 
+                while (acoes.hasNext()) { 
+                    acts = readregrascora((Element) acoes.next(), "acao"); 
                  
                 } 
             } 
-            regras.add(new Rule(name, conds, acts)); 
+            regras.add(new Regra(name, conds, acts)); 
         } 
         return regras; 
     } 
@@ -215,7 +158,7 @@ public class MotorInferencia {
                 respostas.add(resposta.getText()); 
                
             } 
-            perguntas.put(name, new Question(valor, respostas)); 
+            perguntas.put(name, new Pergunta(valor, respostas)); 
         } 
 
         return perguntas; 
@@ -264,9 +207,9 @@ public class MotorInferencia {
 
         Iterator regraSet = regras.iterator(); 
         while (regraSet.hasNext()) { 
-            Rule regra = (Rule) regraSet.next(); 
+            Regra regra = (Regra) regraSet.next(); 
             
-            if (regra.isActive()) { 
+            if (regra.isAtivo()) { 
                 logging("\nExaminando a regra " + regra.getName()); 
                 boolean ok = true; 
                 Hashtable condicoes = regra.getCondicoes(); 
@@ -290,11 +233,11 @@ public class MotorInferencia {
                         String key = (String) keys.nextElement(); 
                         if ((base.get(key)).equals("")) { 
                             if (perguntas.containsKey(key)) { 
-                                Question pergunta = (Question) perguntas.get(key); 
+                                Pergunta pergunta = (Pergunta) perguntas.get(key); 
                                 logging("A Pergunta é " + pergunta.getText()); 
                                 answeredregraatributo = key; 
                                 messagemPergunta = pergunta.getText(); 
-                                totalRespostas = (ArrayList) pergunta.getrespostas(); 
+                                totalRespostas = (ArrayList) pergunta.getRespostas(); 
                                 status = MORE; 
                                 
                                 return status; 
@@ -304,15 +247,15 @@ public class MotorInferencia {
                 } 
                 if (ok) { 
                     logging("A Regra " + regra.getName() + " foi satisfeita"); 
-                    Hashtable actions = regra.getActions(); 
-                    Enumeration actionSet = actions.keys(); 
-                    while (actionSet.hasMoreElements()) { 
-                        String actionKey = (String) actionSet.nextElement(); 
-                        setPersonagem((String) actions.get(actionKey));
-                        makeknown(actionKey, (String) actions.get(actionKey)); 
+                    Hashtable acoes = regra.getAcoes(); 
+                    Enumeration DefAcao = acoes.keys(); 
+                    while (DefAcao.hasMoreElements()) { 
+                        String acaoKey = (String) DefAcao.nextElement(); 
+                        setPersonagem((String) acoes.get(acaoKey));
+                        makeknown(acaoKey, (String) acoes.get(acaoKey)); 
                         
                     } 
-                    regra.setInactive(); 
+                    regra.setInAtivo(); 
                     didsomething = true; 
                     if (var_objetivoset()) { 
                         status = COMPLETE; 
@@ -346,15 +289,15 @@ public class MotorInferencia {
             logging(theansweris()); 
 
             messagemPergunta = theansweris(); 
-        
+            return true;  
             
         } else { 
         
-        	messagemPergunta = "Nenhuma regra satisfaz";
-        	//return false; 
+        	//messagemPergunta = "Nenhuma regra satisfaz";
+        	return false; 
 
         } 
-        return true;  
+        
         
     } 
 
@@ -366,12 +309,12 @@ public class MotorInferencia {
 
         Iterator regraSet = regras.iterator(); 
         while (regraSet.hasNext()) { 
-            Rule regra = (Rule) regraSet.next(); 
-            if (regra.isActive()) { 
+            Regra regra = (Regra) regraSet.next(); 
+            if (regra.isAtivo()) { 
                 if (regra.getCondicoes().containsKey(atributo)) { 
                     if (!regra.getCondicoes().get(atributo).equals(valor)) { 
-                        logging("A regra " + regra.getName() + " está inativa, pois a condição não foi satisfeita"); 
-                        regra.setInactive(); 
+                        logging("A regra " + regra.getName() + " foi desativada, pois a condição não foi satisfeita"); 
+                        regra.setInAtivo(); 
                     } 
                 } 
             } 

@@ -118,13 +118,21 @@ public class InterG3 extends JFrame implements ActionListener
     	
 	
 	
-    	motorInferencia.run();
+    if (motorInferencia.run() != 2) {
 	System.out.println(motorInferencia.log());
 	lbnro1.setText(motorInferencia.getMessagemPergunta());
 	cbOp.removeAllItems();
 	for (int i = 0; i < motorInferencia.getTotalRespostas().size(); i++){
         cbOp.addItem(motorInferencia.getTotalRespostas().get(i));
 	 }
+    }else
+    {
+    	lbnro1.setText(motorInferencia.getMessagemPergunta());
+    	btcalc.setVisible(false);
+    	cbOp.setVisible(false);
+    
+    	
+    }
 	
     }
 

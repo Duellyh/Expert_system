@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 public class InterG2 extends JFrame implements ActionListener{
 
 	  private JLabel lbnro1;
-	    private JButton btcalc, btsair;
+	    private JButton btcalc, btsair, btadd;
 	    
 	    private JPanel pbotoes, pdados;
 	    
@@ -38,11 +38,13 @@ public class InterG2 extends JFrame implements ActionListener{
 	        
 	        lbnro1 = new JLabel("Neste sistema especialista iremos mostrar as funcionalidades \ndo jogo LOL bla bla:");
 
-	        btcalc = new JButton("Começar");
+	        btcalc = new JButton("Iniciar");
 	        btsair = new JButton("Sair");
+	        btadd = new JButton("Add Regra");
 	        
 	        btcalc.addActionListener(this);
 	        btsair.addActionListener(this);
+	        btadd.addActionListener(this);
 	        
 	        // adição de componentes no frame e nos paineis ////
 	        
@@ -53,6 +55,7 @@ public class InterG2 extends JFrame implements ActionListener{
 
 	        
 	        pbotoes.add(btcalc); pbotoes.add(btsair);
+	        pbotoes.add(btadd);
 	        
 	        pdados.setBackground(Color.CYAN);
 	        
@@ -68,6 +71,12 @@ public class InterG2 extends JFrame implements ActionListener{
 	    @Override
 	    public void actionPerformed(ActionEvent ae) 
 	    {
+	    	if (ae.getSource() == btadd)
+	    	{
+	    		new AddRegra();
+	    		
+	    	}
+		          
 	       if (ae.getSource() == btsair)
 	           System.exit(0);
 	       

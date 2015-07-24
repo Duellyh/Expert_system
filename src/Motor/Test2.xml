@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<base>
+  <var_objetivo>
+    <atributo>item</atributo>
+    <text>Item que deverá escolher:</text>
+  </var_objetivo>
+  <regras>
+    <regra>
+      <name>1</name>
+      <condicoes>
+        <condicao>
+          <atributo>Classe_principal</atributo>
+          <valor>Assasino</valor>
+        </condicao>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Jungle</valor>
+        </condicao>
+        <condicao>
+          <atributo>Classe_secundaria</atributo>
+          <valor>Nenhuma</valor>
+        </condicao>
+        <condicao>
+          <atributo>Classe_inimiga</atributo>
+          <valor>Desconhecido</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Hunter's Machete</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>2</name>
+      <condicoes>
+        <condicao>
+          <atributo>Classe_principal</atributo>
+          <valor>Assasino</valor>
+        </condicao>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Mid</valor>
+        </condicao>
+        <condicao>
+          <atributo>Classe_secundaria</atributo>
+          <valor>Nenhuma</valor>
+        </condicao>
+        <condicao>
+          <atributo>Classe_inimiga</atributo>
+          <valor>Mago</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Doran's Blade</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <nome>100</nome>
+      <condicoes>
+        <condicao>
+          <atributo>personagem</atributo>
+          <valor>tank</valor>
+        </condicao>
+        <acao>
+          <atributo>item</atributo>
+          <valor>ring viadoo</valor>
+        </acao>
+      </condicoes>
+      <acoes />
+    </regra>
+  </regras>
+  <perguntas>
+    <pergunta>
+      <atributo>Classe_principal</atributo>
+      <text>Qual é a sua classe principal?</text>
+      <resposta>Atirador</resposta>
+      <resposta>Assasino</resposta>
+      <resposta>Suporte</resposta>
+      <resposta>Mago</resposta>
+      <resposta>Tank</resposta>
+    </pergunta>
+    <pergunta>
+      <atributo>Classe_inimiga</atributo>
+      <text>Qual é a classe inimiga?</text>
+      <resposta>Atirador</resposta>
+      <resposta>Assasino</resposta>
+      <resposta>Suporte</resposta>
+      <resposta>Mago</resposta>
+      <resposta>Tank</resposta>
+    </pergunta>
+  </perguntas>
+</base>
