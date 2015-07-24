@@ -60,9 +60,14 @@
       </condicoes>
       <acoes>
         <acao>
+          <atributo>Class_principal</atributo>
+          <valor>Mago</valor>
+           </acao>
+          <acao>
           <atributo>Rota</atributo>
           <valor>Bot</valor>
-        </acao>
+          </acao>
+       
       </acoes>
     </regra>
     <regra>
@@ -74,9 +79,14 @@
         </condicao>
       </condicoes>
       <acoes>
-        <acao>
+        
+            <acao>
+          <atributo>Class_principal</atributo>
+          <valor>Mago</valor>
+           </acao>
+           <acao>
           <atributo>Rota</atributo>
-          <valor>Lake</valor>
+          <valor>Bot</valor>
         </acao>
       </acoes>
     </regra>
@@ -90,8 +100,8 @@
       </condicoes>
       <acoes>
         <acao>
-          <atributo>Mapa</atributo>
-          <valor>Summoner_rift</valor>
+          <atributo>Talento</atributo>
+          <valor>Incendiar</valor>
         </acao>
       </acoes>
     </regra>
@@ -105,8 +115,8 @@
       </condicoes>
       <acoes>
         <acao>
-          <atributo>Mapa</atributo>
-          <valor>Twisted_treeline</valor>
+          <atributo>Talento</atributo>
+          <valor>Golpear</valor>
         </acao>
       </acoes>
     </regra>
@@ -120,8 +130,8 @@
       </condicoes>
       <acoes>
         <acao>
-          <atributo>Mapa</atributo>
-          <valor>Howling_abyss</valor>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
         </acao>
       </acoes>
     </regra>
@@ -135,8 +145,23 @@
       </condicoes>
       <acoes>
         <acao>
-          <atributo>Mapa</atributo>
-          <valor>Last_World</valor>
+          <atributo>Talento</atributo>
+          <valor>Curar</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>10</name>
+      <condicoes>
+        <condicao>
+          <atributo>Classe_inimiga</atributo>
+          <valor>Tank</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>Talento</atributo>
+          <valor>Proteger</valor>
         </acao>
       </acoes>
     </regra>
@@ -148,8 +173,8 @@
           <valor>Jungle</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Summoner_rift</valor>
+          <atributo>Talento</atributo>
+          <valor>Incendiar</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -167,8 +192,8 @@
           <valor>Jungle</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Twisted_treeline</valor>
+          <atributo>Talento</atributo>
+          <valor>Golpear</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -186,8 +211,8 @@
           <valor>Jungle</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Howling_abyss</valor>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -205,8 +230,8 @@
           <valor>Jungle</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Last_World</valor>
+          <atributo>Talento</atributo>
+          <valor>Curar</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -224,8 +249,8 @@
           <valor>Jungle</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Crystal_scar</valor>
+          <atributo>Talento</atributo>
+          <valor>Proteger</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -243,8 +268,8 @@
           <valor>Top</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Summoner_rift</valor>
+          <atributo>Talento</atributo>
+          <valor>Incendiar</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -262,8 +287,8 @@
           <valor>Top</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Twisted_treeline</valor>
+          <atributo>Talento</atributo>
+          <valor>Golpear</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -281,8 +306,8 @@
           <valor>Top</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Howling_abyss</valor>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -300,8 +325,8 @@
           <valor>Top</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Last_World</valor>
+          <atributo>Talento</atributo>
+          <valor>Curar</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -319,8 +344,8 @@
           <valor>Top</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Crystal_scar</valor>
+          <atributo>Talento</atributo>
+          <valor>Proteger</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -338,8 +363,8 @@
           <valor>Mid</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Summoner_rift</valor>
+          <atributo>Talento</atributo>
+          <valor>Incendiar</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -357,8 +382,8 @@
           <valor>Mid</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Twisted_treeline</valor>
+          <atributo>Talento</atributo>
+          <valor>Golpear</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -376,8 +401,8 @@
           <valor>Mid</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Howling_abyss</valor>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -395,8 +420,8 @@
           <valor>Mid</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Last_World</valor>
+          <atributo>Talento</atributo>
+          <valor>Curar</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -414,8 +439,8 @@
           <valor>Mid</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Crystal_scar</valor>
+          <atributo>Talento</atributo>
+          <valor>Proteger</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -433,8 +458,13 @@
           <valor>Bot</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Summoner_rift</valor>
+          <atributo>Talento</atributo>
+          <valor>Incendiar</valor>
+        </condicao>
+        
+         <condicao>
+          <atributo>Class_principal</atributo>
+          <valor>Mago</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -452,8 +482,12 @@
           <valor>Bot</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Twisted_treeline</valor>
+          <atributo>Talento</atributo>
+          <valor>Golpear</valor>
+        </condicao>
+                        <condicao>
+          <atributo>Class_principal</atributo>
+          <valor>Mago</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -471,8 +505,12 @@
           <valor>Bot</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Howling_abyss</valor>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+                        <condicao>
+          <atributo>Class_principal</atributo>
+          <valor>Mago</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -490,8 +528,12 @@
           <valor>Bot</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Last_World</valor>
+          <atributo>Talento</atributo>
+          <valor>Curar</valor>
+        </condicao>
+         <condicao>
+          <atributo>Class_principal</atributo>
+          <valor>Mago</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -509,8 +551,12 @@
           <valor>Bot</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Crystal_scar</valor>
+          <atributo>Talento</atributo>
+          <valor>Proteger</valor>
+        </condicao>
+                        <condicao>
+          <atributo>Class_principal</atributo>
+          <valor>Mago</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -521,34 +567,19 @@
       </acoes>
     </regra>
     <regra>
-      <name>31</name>
-      <condicoes>
-        <condicao>
-          <atributo>Rota</atributo>
-          <valor>Lake</valor>
-        </condicao>
-        <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Summoner_rift</valor>
-        </condicao>
-      </condicoes>
-      <acoes>
-        <acao>
-          <atributo>item</atributo>
-          <valor>Doran's Blade</valor>
-        </acao>
-      </acoes>
-    </regra>
-    <regra>
       <name>32</name>
       <condicoes>
         <condicao>
           <atributo>Rota</atributo>
-          <valor>Lake</valor>
+          <valor>Bot</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Twisted_treeline</valor>
+          <atributo>Talento</atributo>
+          <valor>Golpear</valor>
+        </condicao>
+        <condicao>
+          <atributo>Class_principal</atributo>
+          <valor>Tank</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -559,15 +590,20 @@
       </acoes>
     </regra>
     <regra>
+ 
       <name>33</name>
       <condicoes>
         <condicao>
           <atributo>Rota</atributo>
-          <valor>Lake</valor>
+          <valor>Bot</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Howling_abyss</valor>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+                  <condicao>
+          <atributo>Class_principal</atributo>
+          <valor>Tank</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -582,11 +618,15 @@
       <condicoes>
         <condicao>
           <atributo>Rota</atributo>
-          <valor>Lake</valor>
+          <valor>Bot</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Last_World</valor>
+          <atributo>Talento</atributo>
+          <valor>Curar</valor>
+        </condicao>
+                  <condicao>
+          <atributo>Class_principal</atributo>
+          <valor>Tank</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -601,11 +641,15 @@
       <condicoes>
         <condicao>
           <atributo>Rota</atributo>
-          <valor>Lake</valor>
+          <valor>Bot</valor>
         </condicao>
         <condicao>
-          <atributo>Mapa</atributo>
-          <valor>Crystal_scar</valor>
+          <atributo>Talento</atributo>
+          <valor>Proteger</valor>
+        </condicao>
+                  <condicao>
+          <atributo>Class_principal</atributo>
+          <valor>Tank</valor>
         </condicao>
       </condicoes>
       <acoes>
@@ -616,21 +660,268 @@
       </acoes>
     </regra>
     <regra>
-      <name>100</name>
+      <name>36</name>
       <condicoes>
         <condicao>
           <atributo>Classe_inimiga</atributo>
-          <valor>Tank</valor>
+          <valor>Desconhecido</valor>
         </condicao>
       </condicoes>
       <acoes>
         <acao>
-          <atributo>Mapa</atributo>
-          <valor>Crystal_scar</valor>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
         </acao>
       </acoes>
     </regra>
-    
+    <regra>
+      <name>37</name>
+      <condicoes>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Bot</valor>
+        </condicao>
+        <condicao>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+        <condicao>
+          <atributo>Estrategia</atributo>
+          <valor>Ofensivo</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Prospector's Ring</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>38</name>
+      <condicoes>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Bot</valor>
+        </condicao>
+        <condicao>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+        <condicao>
+          <atributo>Estrategia</atributo>
+          <valor>Ofensivo</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Hunter's Machete</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>39</name>
+      <condicoes>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Mid</valor>
+        </condicao>
+        <condicao>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+        <condicao>
+          <atributo>Estrategia</atributo>
+          <valor>Ofensivo</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Doran's Blade</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>40</name>
+      <condicoes>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Top</valor>
+        </condicao>
+        <condicao>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+        <condicao>
+          <atributo>Estrategia</atributo>
+          <valor>Ofensivo</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Doran's Ring</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>40</name>
+      <condicoes>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Jungle</valor>
+        </condicao>
+        <condicao>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+        <condicao>
+          <atributo>Estrategia</atributo>
+          <valor>Ofensivo</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Crystalline Flash</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>41</name>
+      <condicoes>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Jungle</valor>
+        </condicao>
+        <condicao>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+        <condicao>
+          <atributo>Estrategia</atributo>
+          <valor>Defensivo</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Ancient Coin</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>42</name>
+      <condicoes>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Top</valor>
+        </condicao>
+        <condicao>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+        <condicao>
+          <atributo>Estrategia</atributo>
+          <valor>Defensivo</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Prospector's Ring</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>43</name>
+      <condicoes>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Mid</valor>
+        </condicao>
+        <condicao>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+        <condicao>
+          <atributo>Estrategia</atributo>
+          <valor>Defensivo</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Elixir of Sorcery</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>44</name>
+      <condicoes>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Bot</valor>
+        </condicao>
+        <condicao>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+        <condicao>
+          <atributo>Estrategia</atributo>
+          <valor>Defensivo</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Elixir of Wrath</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>45</name>
+      <condicoes>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Bot</valor>
+        </condicao>
+        <condicao>
+          <atributo>Talento</atributo>
+          <valor>Acelerar</valor>
+        </condicao>
+        <condicao>
+          <atributo>Estrategia</atributo>
+          <valor>Defensivo</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Spellthief's Edge</valor>
+        </acao>
+      </acoes>
+    </regra>
+    <regra>
+      <name>31</name>
+      <condicoes>
+        <condicao>
+          <atributo>Rota</atributo>
+          <valor>Bot</valor>
+          <atributo>Talento</atributo>
+          <valor>Incendiar</valor>
+        </condicao>
+      </condicoes>
+      <acoes>
+        <acao>
+          <atributo>item</atributo>
+          <valor>Doran's Blade</valor>
+        </acao>
+      </acoes>
+    </regra>
+   
   </regras>
   <perguntas>
     <pergunta>
@@ -650,6 +941,13 @@
       <resposta>Suporte</resposta>
       <resposta>Mago</resposta>
       <resposta>Tank</resposta>
+      <resposta>Desconhecido</resposta>
+    </pergunta>
+    <pergunta>
+      <atributo>Estrategia</atributo>
+      <text>Qual sua estategia?</text>
+      <resposta>Ofensivo</resposta>
+      <resposta>Defensivo</resposta>
     </pergunta>
   </perguntas>
 </base>
