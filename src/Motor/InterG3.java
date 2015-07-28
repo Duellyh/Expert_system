@@ -5,8 +5,12 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.GridLayout;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -27,6 +31,7 @@ public class InterG3 extends JFrame implements ActionListener
     private JTextField txnro1, txnro2, txres;
     private JComboBox cbOp;
     private JButton btcalc, btsair;
+    private Image image;
     
     private JPanel pbotoes, pdados;
     
@@ -131,6 +136,12 @@ public class InterG3 extends JFrame implements ActionListener
     	lbnro1.setText(motorInferencia.getMessagemPergunta());
     	btcalc.setVisible(false);
     	cbOp.setVisible(false);
+    	this.setSize(800,450);
+    	   image = ImageIO.read(new File("/home/rafael/Documents/workspace/Inference_engine_1/src/Motor/lol_3a.jpg"));
+		      JLabel picLabel = new JLabel(new ImageIcon(image));
+		      
+		      tela.add(picLabel);
+		      tela.repaint();
     
     	
     }

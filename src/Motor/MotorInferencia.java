@@ -208,14 +208,14 @@ public class MotorInferencia {
         Iterator regraSet = regras.iterator(); 
         while (regraSet.hasNext()) { 
             Regra regra = (Regra) regraSet.next(); 
-            
+          // aqui eu examino a regra  
             if (regra.isAtivo()) { 
                 logging("\nExaminando a regra " + regra.getName()); 
                 boolean ok = true; 
                 Hashtable condicoes = regra.getCondicoes(); 
                 Enumeration keys; 
                 keys = condicoes.keys(); 
-                
+           // aqui eu avalio o seguinte, se eu procurar um atributo, mas ele não existe na regra
                 while (keys.hasMoreElements()) { 
                     String key = (String) keys.nextElement(); 
                     if ((base.get(key)).equals("")) { 
@@ -227,6 +227,8 @@ public class MotorInferencia {
                         } 
                     } 
                 } 
+                
+               
                 if (ok) { 
                     keys = condicoes.keys(); 
                     while (keys.hasMoreElements()) { 
@@ -245,6 +247,7 @@ public class MotorInferencia {
                         } 
                     } 
                 } 
+                // Quando a regra for satisfeita, o OK = true. então a regra avalia é satisfeita e a variavel objetivo é definida e termina a máquina
                 if (ok) { 
                     logging("A Regra " + regra.getName() + " foi satisfeita"); 
                     Hashtable acoes = regra.getAcoes(); 
@@ -293,7 +296,7 @@ public class MotorInferencia {
             
         } else { 
         
-        	//messagemPergunta = "Nenhuma regra satisfaz";
+  
         	return false; 
 
         } 

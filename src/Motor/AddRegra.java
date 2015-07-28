@@ -212,7 +212,10 @@ public class AddRegra extends JFrame implements ActionListener{
 		     
 		     if (!(txtAtributoRegra2.getText().equals(" ")) && !(txtvalorRegra2.getText().equals(" ")))
 	    	   {
-		    	 //JOptionPane.showMessageDialog(null, " Vazio");
+		    	 //condicao dentro de condicoes
+			     El_condicao = new Element("condicao");
+			     
+			     El_condicoes.addContent(El_condicao); 
 		    	 //atributo dentro de condicao
 			    El_condicao_atri = new Element("atributo").setText(atributo_regra2);
 			     
